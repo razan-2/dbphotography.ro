@@ -4,6 +4,8 @@ import img1 from './assets/timeline/1.jpg';
 import img2 from './assets/timeline/2.jpg';
 import img3 from './assets/timeline/3.jpg';
 
+//comment;
+
 const timelineData = [
   {
     id: 1,
@@ -31,6 +33,8 @@ const timelineData = [
 export default function Timeline() {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: "-100px" })
+
+  console.log('code');
 
   return (
     <div className="bg-dark min-h-screen py-16 px-4">
